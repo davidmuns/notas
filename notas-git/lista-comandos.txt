@@ -1,0 +1,47 @@
+-crear carpeta: mkdir nombre-carpeta
+-crar archivo: touch nombre-archivo.extension
+-modificar contenido archivo: vi nombre-archivo.extension
+-guardar cambios archivo: 1-tecla esc, 2- :, 3- wq
+-abrir archivo: cat nombre-archivo.extension
+-listar archivos: ls
+-limpiar consola: ctrl + l o clear
+
+git --version
+git --help
+git status
+
+Actualizar fork repo github:
+- https://styde.net/actualizar-el-fork-de-un-repositorio-de-github/
+
+- mover un archivo a staging area: git add nombre-archivo.extension
+- remover un archivo de staging area: git rm --cached nombre-archivo.extension
+- mover todos los archivos a staging area: git add .
+- remover todos los archivos de staging area: git --cached -r .
+- ver cambios: git diff
+- commit: git commit -m "descripcion"
+- listar commits: git log
+- listar commits en una linea: git log --oneline
+- ver detalles commit: git show + hash
+- modificar descripcion último commit: git commit -amend -m "nueva descripcion"
+- subir repositorio local a github:
+	1. Crear nuevo repositorio en github
+	2. git init en carpeta repo local
+	3. git add .
+	4. git commit -m "first commit" 
+	5. git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+	2. git branch -M master
+	3. git push -u origin master
+- crear rama: git branch nombre-rama
+- crear rama y conmutar: git checkout -b nombre rama
+- borrar rama (desde rama principal): git branch -d nombre-rama
+- borrar rama github desde local: git push origin :nombre-rama
+- listar ramas en local: git branch
+- listar ramas en remoto: git branch -r
+- listar ramas en remoto y en local: git branch --all o -a 
+- cambiar de rama: git checkout nombre-rama
+- cambiar a rama anterior: git checkout -
+- subir rama a github: git push -u origin nombre-rama
+- subir cambios a github: git push
+- forzar cambios a github: git push -f
+- traer cambios de github: git pull
+- traer cambios de una rama remota (main) a una rama local distinta (develop): git pull --rebase origin main
