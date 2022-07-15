@@ -33,6 +33,8 @@ const weekendDayJsonArray: {}[] = [
                                   ]
 - syntax: <p *ngFor="let day of weekendDaysArr">{{day}}</p> 
           <p *ngFor="let day of weekendDayJsonArray">{{day.dayName}}</p> 
+
+# ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
      
 # Tutorials
 - components:
