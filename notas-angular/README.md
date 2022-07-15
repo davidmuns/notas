@@ -11,6 +11,8 @@ ng serve --open || ng serve -o || ng s
     ng generate component <name component> || ng g c <name component>
 - create component inline (only typscript file, neither css file nor   html file):
     ng generate component -s -t <name component> || ng g c -s -t <name component>
+- component interaction:
+    https://www.youtube.com/watch?v=BGy8DdGw_WE
 
 # IMPORT JSON file (source: https://fjmduran.com/blog/leer-json-angular)
     1) open file tsconfig.json
