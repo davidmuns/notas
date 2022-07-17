@@ -37,6 +37,8 @@ const weekendDayJsonArray: {}[] = [
           <p *ngFor="let day of weekendDayJsonArray; let i = index">{{ i }} {{day.dayName}}</p>
 
 # Directive ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
+
+# Directive ngModel (source: https://www.youtube.com/watch?v=kMmaz-OLCeg)
     
 
 # Class Binding (source: https://www.youtube.com/watch?time_continue=142&v=Vonu67tnPJc&feature=emb_logo):
@@ -60,6 +62,18 @@ const weekendDayJsonArray: {}[] = [
             <img src = "{{ imgPath }}">
         - Using property binding:
             <img [src] = "imgPath">
+
+# Event Binding (source: https://www.youtube.com/watch?v=APMJU3E6h58):
+    -eg:
+        export class AppComponent {
+            public save = (e: Event) => console.log(e); 
+        }      
+        <button (mouseover) = "save($event)">
+# Event filtering (source: https://www.youtube.com/watch?v=rrEVq7gY6uI&t=174s)
+
+# Template variable (source: https://www.youtube.com/watch?v=tdKg-lpiMvA&t=25s)
+
+# 
      
 # Tutorials
 - components:
