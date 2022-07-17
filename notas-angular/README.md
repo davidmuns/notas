@@ -33,6 +33,8 @@ const weekendDayJsonArray: {}[] = [
                                   ]
 - syntax: <p *ngFor="let day of weekendDaysArr">{{day}}</p> 
           <p *ngFor="let day of weekendDayJsonArray">{{day.dayName}}</p> 
+          Note that index can be obtained and stored in a variable for later use:
+          <p *ngFor="let day of weekendDayJsonArray; let i = index">{{ i }} {{day.dayName}}</p>
 
 # ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
     
@@ -47,7 +49,7 @@ const weekendDayJsonArray: {}[] = [
 
 # Property Binding [src] to insert images (source: https://www.youtube.com/watch?time_continue=60&v=O6RceGqH7MA&feature=emb_logo):
     
-    - Note!!: local images must be located inside the assets folder.
+    - Note: local images must be located inside the assets folder.
 
     - eg:
         export class AppComponent {
