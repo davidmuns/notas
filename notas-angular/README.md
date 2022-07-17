@@ -38,22 +38,26 @@ const weekendDayJsonArray: {}[] = [
     
 
 # Class Binding (source: https://www.youtube.com/watch?time_continue=142&v=Vonu67tnPJc&feature=emb_logo):
-    - ej:
-        Add class bg-green if condition is true: <body [class.bg-green] = "condition">
+    - eg:
+        Add class bg-green if condition is true: <button [class.bg-green] = "condition">
+
+# Style Binding (source: https://www.youtube.com/watch?v=vzkSp4HSL3s&t=95s):
+    - eg:
+        Apply color pink to background-color style if condition is true otherwise apply color white: <button [style.backgroundColor] = "condition == true ? 'pink' : 'white'">
 
 # Property Binding [src] to insert images (source: https://www.youtube.com/watch?time_continue=60&v=O6RceGqH7MA&feature=emb_logo):
     
     - Note!!: local images must be located inside the assets folder.
 
-    Eg:
-    export class AppComponent {
-        imgPath: string = 'assets/img/img1.jpg';
-    } 
+    - eg:
+        export class AppComponent {
+            imgPath: string = 'assets/img/img1.jpg';
+        } 
 
-    - Using string interpolation: 
-        <img src = "{{ imgPath }}">
-    - Using property binding:
-        <img [src] = "imgPath">
+        - Using string interpolation: 
+            <img src = "{{ imgPath }}">
+        - Using property binding:
+            <img [src] = "imgPath">
      
 # Tutorials
 - components:
