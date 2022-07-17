@@ -6,7 +6,7 @@ ng new name-application
  1) Go first to name-application folder => cd name-application
  2) ng serve --open || ng serve -o || ng s
 
-# COMPONENTS (source: https://angular.io/guide/component-overview)
+# Components (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
     ng generate component name-component || ng g c name-component
 - create component inline (only typscript file, neither css file nor html file):
@@ -14,7 +14,7 @@ ng new name-application
 - component interaction:
     https://www.youtube.com/watch?v=BGy8DdGw_WE
 
-# IMPORT JSON file (source: https://fjmduran.com/blog/leer-json-angular)
+# Import json file (source: https://fjmduran.com/blog/leer-json-angular)
     1) open file tsconfig.json
     2) add in "compilerOptions" the following two properties:
         -  "compilerOptions": {
