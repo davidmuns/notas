@@ -35,6 +35,11 @@ const weekendDayJsonArray: {}[] = [
           <p *ngFor="let day of weekendDayJsonArray">{{day.dayName}}</p> 
 
 # ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
+    
+
+# Class Binding (source: https://www.youtube.com/watch?time_continue=142&v=Vonu67tnPJc&feature=emb_logo):
+    - ej:
+        Add class bg-green if condition is true: <body [class.bg-green] = "condition">
 
 # Property Binding [src] to insert images (source: https://www.youtube.com/watch?time_continue=60&v=O6RceGqH7MA&feature=emb_logo):
     
