@@ -1,16 +1,16 @@
 # Install Angular CLI (source: https://angular.io/guide/setup-local)
 npm install -g @angular/cli
 # Create workspace and initial application
-ng new <name application>
+ng new name-application
 # run the application on server
-Go first to <name application> folder => cd <name appliction>
+Go first to name-application folder => cd name-application
 ng serve --open || ng serve -o || ng s
 
 # COMPONENTS (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
-    ng generate component <name component> || ng g c <name component>
+    ng generate component name-component || ng g c name-component
 - create component inline (only typscript file, neither css file nor html file):
-    ng generate component -s -t <name component> || ng g c -s -t <name component>
+    ng generate component -s -t name-component || ng g c -s -t name-component
 - component interaction:
     https://www.youtube.com/watch?v=BGy8DdGw_WE
 
