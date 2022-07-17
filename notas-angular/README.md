@@ -45,7 +45,7 @@ const weekendDayJsonArray: {}[] = [
         imgPath: string = 'assets/img/img1.jpg';
     } 
 
-    - Usin string interpolation: 
+    - Using string interpolation: 
         <img src = "{{ imgPath }}">
     - Using property binding:
         <img [src] = "imgPath">
