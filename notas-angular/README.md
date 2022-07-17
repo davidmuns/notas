@@ -38,7 +38,7 @@ const weekendDayJsonArray: {}[] = [
 
 # Property Binding [src] to insert images (source: https://www.youtube.com/watch?time_continue=60&v=O6RceGqH7MA&feature=emb_logo):
     
-    @Note: local images must be located inside the assets folder.
+    - Note!!: local images must be located inside the assets folder.
 
     Eg:
     export class AppComponent {
