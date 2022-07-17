@@ -25,7 +25,7 @@ ng new name-application
     3) import json file in order to use it as follows: 
         import <name of your choice> from 'json file path' 
 
-# ngFor (source: https://www.youtube.com/watch?v=Pds_3UZPmuQ ) 
+# Directive ngFor (source: https://www.youtube.com/watch?v=Pds_3UZPmuQ ) 
 const weekendDaysArr: string[] = ['Saturday', 'Sunday'];
 const weekendDayJsonArray: {}[] = [
                                     {"dayName": "Saturday"}, 
@@ -36,7 +36,7 @@ const weekendDayJsonArray: {}[] = [
           Note that index can be obtained and stored in a variable for later use:
           <p *ngFor="let day of weekendDayJsonArray; let i = index">{{ i }} {{day.dayName}}</p>
 
-# ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
+# Directive ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
     
 
 # Class Binding (source: https://www.youtube.com/watch?time_continue=142&v=Vonu67tnPJc&feature=emb_logo):
