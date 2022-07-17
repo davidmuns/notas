@@ -5,6 +5,8 @@
 -abrir archivo: cat nombre-archivo.extension
 -listar archivos: ls
 -limpiar consola: ctrl + l o clear
+-moverse a un directorio: cd nombre directorio
+.moverse a directorio anterior: ..cd
 
 git --version
 git --help
@@ -45,3 +47,10 @@ Actualizar fork repo github:
 - forzar cambios a github: git push -f
 - traer cambios de github: git pull
 - traer cambios de una rama remota (main) a una rama local distinta (develop): git pull --rebase origin main
+- fusionar una rama con otra: 
+	1) Nos aseguramos que ambas ramas estan actualizadas (sin commits pendientes): git status
+	2) Nos vamos a la rama de recepción (ej. master): git checkout master
+	3) Una vez estamos en la rama de recepción (ej. master) nos traemos la rama a fusionar (ej. develop): git merge develop
+	4) Si lo deseas puedes eliminar la rama fusionada (ej. develop) desde la rama de recepción en local: git branch -d develop
+	y en remoto: git push origin :develop
+
