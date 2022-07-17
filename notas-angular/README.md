@@ -3,8 +3,8 @@ npm install -g @angular/cli
 # Create workspace and initial application
 ng new name-application
 # run the application on server
-Go first to name-application folder => cd name-application
-ng serve --open || ng serve -o || ng s
+ 1) Go first to name-application folder => cd name-application
+ 2) ng serve --open || ng serve -o || ng s
 
 # COMPONENTS (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
