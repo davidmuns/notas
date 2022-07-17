@@ -6,6 +6,20 @@ ng new name-application
  1) Go first to name-application folder => cd name-application
  2) ng serve --open || ng serve -o || ng s
 
+# Install bootstrap in Angular (source (min 9): https://www.youtube.com/watch?v=tAzKlk3dpI8&list=PLU8oAlHdN5BnNAe8zXnuBNzKID39DUwcO&index=13):
+
+    1) npm install bootstrap --save
+    2) open file angular.json
+    3) add bootstrap path to styles and scripts properties:
+    
+        "styles": [
+                "src/styles.css",
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                ],
+        "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+                ],
+
 # Components (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
     ng generate component name-component || ng g c name-component
@@ -72,8 +86,6 @@ const weekendDayJsonArray: {}[] = [
 # Event filtering (source: https://www.youtube.com/watch?v=rrEVq7gY6uI&t=174s)
 
 # Template variable (source: https://www.youtube.com/watch?v=tdKg-lpiMvA&t=25s)
-
-# 
      
 # Tutorials
 - components:
