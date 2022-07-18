@@ -6,7 +6,7 @@
 -listar archivos: ls
 -limpiar consola: ctrl + l o clear
 -moverse a un directorio: cd nombre directorio
--moverse a directorio anterior: ..cd
+-moverse a directorio anterior: cd ..
 
 git --version
 git --help
