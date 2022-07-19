@@ -86,6 +86,8 @@ const weekendDayJsonArray: {}[] = [
 # Event filtering (source: https://www.youtube.com/watch?v=rrEVq7gY6uI&t=174s)
 
 # Template variable (source: https://www.youtube.com/watch?v=tdKg-lpiMvA&t=25s)
+
+# Components interaction (source: https://angular.io/guide/inputs-outputs)
      
 # Tutorials
 - components:
