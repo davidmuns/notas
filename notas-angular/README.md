@@ -88,6 +88,10 @@ const weekendDayJsonArray: {}[] = [
 # Template variable (source: https://www.youtube.com/watch?v=tdKg-lpiMvA&t=25s)
 
 # Components interaction (source: https://angular.io/guide/inputs-outputs)
+
+# Services ()
+- create service automatically using CLI:
+    ng generate service name-service || ng g s name-service
      
 # Tutorials
 - components:
