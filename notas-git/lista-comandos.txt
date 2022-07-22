@@ -53,4 +53,18 @@ Actualizar fork repo github:
 	3) Una vez estamos en la rama de recepción (ej. master) nos traemos la rama a fusionar (ej. develop): git merge develop
 	4) Si lo deseas puedes eliminar la rama fusionada (ej. develop) desde la rama de recepción en local: git branch -d develop
 	y en remoto: git push origin :develop
+- Renombrar rama en local:
+	1) Ir a la rama que queremos renombrar: git checkout nombre-rama
+	2) Renombrar rama: git branch -m nombre-nuevo
+	- O bien:
+	1) Desde rama principal: git branch -m nombre-antiguo nombre-nuevo
+- Renombrar rama en remoto:
+	1) Nos aseguramos que estamos en la rama cuyo nombre queremos cambiar: git branch -a
+	2) Eliminar rama de repositorio remoto cuyo nombre queremos cambiar: git push origin --delete nombre nombre-rama
+	3) Comprobar que la rama ha sido eliminada
+	4) Subir rama con el nuevo nombre: git push origin -u nombre-rama, 
+	- O bien
+	1) Ir a rama pricipal: git push origin :nombre-antiguo nombre-nuevo 
+	
+	
 
