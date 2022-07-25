@@ -10,7 +10,7 @@ ng new name-application
 
     1) npm install bootstrap --save
     2) open file angular.json
-    3) add bootstrap path to styles and scripts properties:
+    3) add path to styles and scripts properties:
     
         "styles": [
                 "src/styles.css",
@@ -19,6 +19,21 @@ ng new name-application
         "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.min.js"
                 ],
+# Install fontawesome ():
+
+    1) npm install --save @fortawesome/fontawesome-free
+    2) open file angular.json
+    3) add path to styles and scripts properties:
+    
+        "styles": [
+                "src/styles.css",
+                "node_modules/@fortawesome/fontawesome-free/css/all.css"
+                ],
+        "scripts": [
+                "node_modules/@fortawesome/fontawesome-free/js/all.js"
+                ],
+    4) use it in your template:
+        e.g: <i class="fa-solid fa-square-plus fa-2x"></i>
 
 # Components (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
@@ -38,6 +53,8 @@ ng new name-application
                 }
     3) import json file in order to use it as follows: 
         import <name of your choice> from 'json file path' 
+
+# Adding sgv images (source: https://iconscout.com/)
 
 # Directive ngFor (source: https://www.youtube.com/watch?v=Pds_3UZPmuQ ) 
 const weekendDaysArr: string[] = ['Saturday', 'Sunday'];
