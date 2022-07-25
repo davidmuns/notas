@@ -35,6 +35,8 @@ ng new name-application
     4) use it in your template:
         e.g: <i class="fa-solid fa-square-plus fa-2x"></i>
 
+# Adding sgv images (source: https://iconscout.com/)
+
 # Components (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
     ng generate component name-component || ng g c name-component
@@ -53,8 +55,6 @@ ng new name-application
                 }
     3) import json file in order to use it as follows: 
         import <name of your choice> from 'json file path' 
-
-# Adding sgv images (source: https://iconscout.com/)
 
 # Directive ngFor (source: https://www.youtube.com/watch?v=Pds_3UZPmuQ ) 
 const weekendDaysArr: string[] = ['Saturday', 'Sunday'];
