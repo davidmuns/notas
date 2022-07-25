@@ -35,7 +35,11 @@ ng new name-application
     4) use it in your template:
         e.g: <i class="fa-solid fa-square-plus fa-2x"></i>
 
-# Adding sgv images (source: https://iconscout.com/)
+# Adding sgv image to button (source: https://iconscout.com/)
+    e.g:
+     <button>
+        <img class="minus-img" src="../../../assets/minus.svg" alt="btn-minus" />
+    </button>
 
 # Components (source: https://angular.io/guide/component-overview)
 - create component automatically using CLI:
