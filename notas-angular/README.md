@@ -60,7 +60,7 @@ ng new name-application
     3) import json file in order to use it as follows: 
         import <name of your choice> from 'json file path' 
 
-# Directive ngFor (source: https://www.youtube.com/watch?v=Pds_3UZPmuQ ) 
+# Structural directive ngFor (source: https://www.youtube.com/watch?v=Pds_3UZPmuQ ) 
 const weekendDaysArr: string[] = ['Saturday', 'Sunday'];
 const weekendDayJsonArray: {}[] = [
                                     {"dayName": "Saturday"}, 
@@ -71,9 +71,19 @@ const weekendDayJsonArray: {}[] = [
           Note that index can be obtained and stored in a variable for later use:
           <p *ngFor="let day of weekendDayJsonArray; let i = index">{{ i }} {{day.dayName}}</p>
 
-# Directive ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
+# Attribute directive ngClass (source: https://www.youtube.com/watch?v=ed6JaTbbZ7c)
 
-# Directive ngModel (source: https://www.youtube.com/watch?v=kMmaz-OLCeg)
+# Attribute directive ngModel-two way binding (source: https://www.youtube.com/watch?v=kMmaz-OLCeg):
+    - It allows us to send data from template to component and vice versa. [(ngModel)] (banana box :-))
+     1) import Fomrsmodule:
+            @NgModule({
+                declarations: [
+                    AppComponent
+                ],
+                imports: [
+                    BrowserModule,
+                    FormsModule
+                    ],
     
 
 # Class Binding (source: https://www.youtube.com/watch?time_continue=142&v=Vonu67tnPJc&feature=emb_logo):
@@ -104,6 +114,7 @@ const weekendDayJsonArray: {}[] = [
             public save = (e: Event) => console.log(e); 
         }      
         <button (mouseover) = "save($event)">
+        
 # Event filtering (source: https://www.youtube.com/watch?v=rrEVq7gY6uI&t=174s)
 
 # Template variable (source: https://www.youtube.com/watch?v=tdKg-lpiMvA&t=25s)
@@ -112,8 +123,39 @@ const weekendDayJsonArray: {}[] = [
 
 # Services ()
 - create service automatically using CLI:
-    ng generate service name-service || ng g s name-service
-     
+    1) ng generate service name-service || ng g s name-service
+    2) include service in app.module.ts file:
+      ],
+         providers: [name-service],
+         bootstrap: [AppComponent]
+      })
+      export class AppModule { }
+
+# Pipe (source: https://www.youtube.com/watch?v=pAkG9KLrAxI):
+- create pipe automatically using CLI:
+    ng generate pipe name-pipe || ng g p name-pipe
+
+# Routing module, passing parameters and more (source: https://www.youtube.com/watch?v=HtRZDWaAgRw&list=PL_WGMLcL4jzVY1y-SutA3N_PCNCAG7Y46&index=8):
+
+    - generate routing mdoule using CLI:
+     1) ng generate module app-routing --flat --module=app
+     2) create routes, imports and exports in app-routing.module.ts file:
+        
+        const routes: Routes = [
+        {
+            path: '',
+            component: HomeComponent
+        }
+        ]      
+        @NgModule({
+            declarations: [],
+            imports: [RouterModule.forRoot(routes)]
+            exports: [RouterModule]
+        })
+        export class AppRoutingModule { }
+     3) create home componente and copy the code from app template and app component
+     3) add selector in app template: <router-outlet></router-outlet>
+
 # Tutorials
 - components:
     - https://www.youtube.com/watch?v=CitMo3hip6Y&list=PLU8oAlHdN5BnNAe8zXnuBNzKID39DUwcO&index=5 
