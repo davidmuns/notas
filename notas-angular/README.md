@@ -1,10 +1,10 @@
 # Install Angular CLI (source: https://angular.io/guide/setup-local)
 npm install -g @angular/cli
-# Create workspace and initial application
-ng new name-application
+# Create workspace and initial application with routing
+ng new name-application --routing
 # run the application on server
  1) Go first to name-application folder => cd name-application
- 2) ng serve --open || ng serve -o || ng s
+ 2) ng serve --open || ng serve -o || ng s (--open or -o to open the browser automatically)
 
 # Install bootstrap in Angular (source (min 9): https://www.youtube.com/watch?v=tAzKlk3dpI8&list=PLU8oAlHdN5BnNAe8zXnuBNzKID39DUwcO&index=13):
 
