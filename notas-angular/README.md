@@ -48,6 +48,8 @@ ng new name-application --routing
     ng generate component -s -t name-component || ng g c -s -t name-component
 - component interaction:
     https://www.youtube.com/watch?v=BGy8DdGw_WE
+- generate component without test:
+    ng generate component name-component --skip-tests=true
 
 # Import json file (source: https://fjmduran.com/blog/leer-json-angular)
     1) open file tsconfig.json
