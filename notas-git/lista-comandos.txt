@@ -8,6 +8,10 @@
 -moverse a un directorio: cd nombre directorio
 -moverse a directorio anterior: cd ..
 
+############
+Comandos git
+############
+
 git --version
 git --help
 git status
