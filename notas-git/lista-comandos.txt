@@ -69,6 +69,10 @@ Actualizar fork repo github:
 	4) Subir rama con el nuevo nombre: git push origin -u nombre-rama, 
 	- O bien
 	1) Ir a rama pricipal: git push origin :nombre-antiguo nombre-nuevo 
+- crear comentarios en rama: git config branch.nombreRama.note 'comentario'
+- recuperar comentarios: git config branch.nombreRama.note
+- realizar tracking ramas: git fetch --prune
+- undo commit: git reset HEAD^ 
 	
 	
 
